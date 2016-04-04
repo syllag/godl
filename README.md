@@ -10,4 +10,6 @@ Today it works for DL-Lite_Core. It consists in 3 complementary tools:
 Execute with the `-h` flag for more details.
 
 ## Installation
-	> go get https://github.com/syllag/godl
+	go get github.com/syllag/godl/godl-import
+	go get github.com/syllag/godl/godl-compile
+	go get github.com/syllag/godl/godl-query
