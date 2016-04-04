@@ -1,0 +1,15 @@
+
+Ontology(
+
+ClassAssertion(artist Mozart)
+
+ClassAssertion(artist Hendrix)
+
+ClassAssertion(artist Hendrix)
+
+ClassAssertion(artist Ravel)
+
+
+ObjectPropertyAssertion(hasArtist summertime gershwin)
+
+)

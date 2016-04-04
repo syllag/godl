@@ -1,0 +1,45 @@
+Ontology(
+   Declaration(Class(venusian))
+   Declaration(Class(jupiterian))
+   Declaration(Class(saturnian))
+   Declaration(Class(mercurian))
+   Declaration(Class(martian))
+
+   Declaration(Class(human))
+   Declaration(Class(artist))
+   Declaration(Class(painter))
+   Declaration(Class(fool))
+
+
+   Declaration(Class(piece))
+   Declaration(ObjectProperty(hasComposed))
+   Declaration(ObjectProperty(hasArtist))
+
+
+   DisjointClasses(martian venusian)
+   DisjointClasses(martian jupiterian)
+   DisjointClasses(martian saturnian)
+   DisjointClasses(martian mercurian)
+   DisjointClasses(martian human)
+   DisjointClasses(martian piece)
+
+
+
+   SubClassOf(artist human)
+   SubClassOf(painter artist)
+
+   EquivalentClasses(artist fool)
+
+   DisjointClasses(artist piece)
+
+
+   ObjectPropertyDomain(hasArtist piece)
+   ObjectPropertyRange(hasArtist artist)
+
+   ObjectPropertyDomain(hasComposed artist)
+   ObjectPropertyRange(hasComposed piece)
+
+   InverseObjectProperties(hasComposed hasArtist)
+
+   ObjectPropertyDomain(hasArtist piece)
+)
